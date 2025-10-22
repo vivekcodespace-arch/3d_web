@@ -6,6 +6,7 @@ const Video = () => {
       className="h-full w-full object-cover"
       autoPlay
       muted
+      loop
       playsInline
       src="/video/video_back.mp4"
     ></video>    

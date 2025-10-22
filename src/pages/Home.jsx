@@ -9,8 +9,9 @@ const Home = () => {
       <div className='h-screen w-screen fixed'>
         <Video/>
       </div>
-      <div className='relative h-screen w-screen flex flex-col'>
+      <div className='relative h-screen w-screen flex flex-col justify-between'>
         <HomeHeroText/>
+        <HomeBottomText/>
       </div>
     </div>
   )
