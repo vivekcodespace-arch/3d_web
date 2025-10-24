@@ -40,7 +40,7 @@ const Agence = () => {
         markers: true,
         trigger: imageDivRef.current,
         start: "top 22%",
-        end: "top -170%",
+        end: "top -180%",
         scrub: true,
         pin: true,
         onUpdate: function (element) {
@@ -60,7 +60,7 @@ const Agence = () => {
       <div className="section1">
         <div
           ref={imageDivRef}
-          className="absolute  top-[8vw] left-[30vw] h-[21vw] w-[15vw] rounded-xl overflow-hidden"
+          className="absolute  top-[5%] left-[30vw] h-[21vw] w-[15vw] rounded-xl overflow-hidden"
         >
           <img
             ref={imageRef}
@@ -72,7 +72,7 @@ const Agence = () => {
 
         <div className="relative font-[font2]">
           <div className="">
-            <h1 className="mt-43 text-[20vw] uppercase leading-[17.5vw] text-center">
+            <h1 className="mt-[27%] text-[20vw] uppercase leading-[17.5vw] text-center">
               Soixan7e
               <br />
               Douze
