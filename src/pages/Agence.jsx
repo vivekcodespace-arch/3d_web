@@ -37,15 +37,15 @@ const Agence = () => {
   useGSAP(function () {
     gsap.to(imageDivRef.current, {
       scrollTrigger: {
-        markers: true,
+        // markers: true,
         trigger: imageDivRef.current,
-        start: "top 22%",
+        start: "top 55px", // intially it was set to top 22%
         end: "top -180%",
         scrub: true,
         pin: true,
         onUpdate: function (element) {
           let x = Math.floor(element.progress * 13);
-          console.log(x);
+          // console.log(x);
           if (count.current !== x) {
             imageRef.current.src = preloadedImages[x].src;
             count.current = x;
@@ -60,7 +60,7 @@ const Agence = () => {
       <div className="section1">
         <div
           ref={imageDivRef}
-          className="absolute  top-[5%] left-[30vw] h-[21vw] w-[15vw] rounded-xl overflow-hidden"
+          className="absolute  top-[5px] left-[30vw] h-[21vw] w-[15vw] rounded-xl overflow-hidden"
         >
           <img
             ref={imageRef}
