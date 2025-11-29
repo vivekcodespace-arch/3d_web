@@ -46,12 +46,13 @@ const Stairs = (props) => {
       // scale: 1.2, // This is causing the issue, when i am scaling the image in the Agence .jsx dislocates it moves
       //   });
 
-      if (current !== "/agence") {
+      
         gsap.from(pageRef.current, {
           opacity: 0,
           delay: 0.75,
+          scale:1.2,
         });
-      }
+      
     },
     [current]
   );
